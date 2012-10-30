@@ -1,14 +1,12 @@
 LOCAL_PATH := $(call my-dir)
 
-LOCAL_PATH := $(call my-dir)
- 
 include $(CLEAR_VARS)
  
 LOCAL_MODULE    := libzzip
 LOCAL_LDLIBS	:= -ldl -lz
 LOCAL_SRC_FILES := zzip/dir.c zzip/err.c zzip/fetch.c zzip/file.c zzip/fseeko.c zzip/info.c zzip/memdisk.c zzip/mmapped.c zzip/plugin.c zzip/stat.c zzip/write.c zzip/zip.c
  
-include $(BUILD_SHARED_LIBRARY)
+include $(BUILD_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
 
@@ -176,7 +174,7 @@ LOCAL_SRC_FILES		:=\
 	freeimage/LibOpenJPEG/thix_manager.c\
 	freeimage/LibOpenJPEG/tpix_manager.c\
 
-include $(BUILD_SHARED_LIBRARY)
+include $(BUILD_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE    := libfreetype
@@ -218,4 +216,4 @@ LOCAL_SRC_FILES     :=\
 		freetype/src/type42/type42.c\
 		freetype/src/winfonts/winfnt.c
  
- include $(BUILD_SHARED_LIBRARY)
+ include $(BUILD_STATIC_LIBRARY)
