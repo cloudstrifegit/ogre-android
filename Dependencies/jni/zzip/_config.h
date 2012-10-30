@@ -24,7 +24,7 @@
 /* Define to 1 if you have the <dirent.h> header file, and it defines `DIR'.
    */
 #ifndef ZZIP_HAVE_DIRENT_H 
-//#define ZZIP_HAVE_DIRENT_H  1 
+// #define ZZIP_HAVE_DIRENT_H  1 
 #endif
 
 /* Define to 1 if you have the <dlfcn.h> header file. */
